@@ -1,0 +1,598 @@
+{
+	"info": {
+		"_postman_id": "83065d61-7e0b-47b4-ac47-5518be8eb2ec",
+		"name": "mercado-del-vetro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost/produtos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/javascript",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/produtos",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/aplicacoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/aplicacoes",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aplicacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/imagens_aplicacoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/imagens_aplicacoes",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"imagens_aplicacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos/<int:id>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/produtos/48",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/aplicacoes/<int:id>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/aplicacoes/20",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aplicacoes",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/imagens_aplicacoes/<int:id>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/imagens_aplicacoes/9",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"imagens_aplicacoes",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/imagens_aplicacoes/0/<int:id_ap>",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/imagens_aplicacoes/0/20",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"imagens_aplicacoes",
+						"0",
+						"20"
+					]
+				},
+				"description": "para dar get em todas as imagens com mesma chave estrangeira. Ou seja, todas as imagens pertencentes a mesma categoria de aplicação para exibir no modal"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "titulo",
+							"value": "pote",
+							"type": "text"
+						},
+						{
+							"key": "texto",
+							"value": "pode de marmita",
+							"type": "text"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/Chan/Pictures/4.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/produtos",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/aplicacoes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "Lareira",
+							"type": "text"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/Chan/Pictures/2.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/aplicacoes",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aplicacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/imagens_aplicacoes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_ap",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/Chan/Desktop/DelVetro/mercato-del-vetro/static/img/tempo.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/imagens_aplicacoes",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"imagens_aplicacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos/<int:id>",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "titulo",
+							"value": "colorido",
+							"type": "text"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/Chan/Desktop/DelVetro/mercato-del-vetro/static/img/qualidade.jpeg"
+						},
+						{
+							"key": "texto",
+							"value": "muito bonito e pode te deixar gay",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/produtos/3",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/aplicacoes/<int:id>",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome",
+							"value": "boxes",
+							"type": "text"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/Chan/Desktop/DelVetro/mercato-del-vetro/static/img/produtos/box.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/aplicacoes/20",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aplicacoes",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos/<int:id>/<int:posicao>",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost/produtos/48/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos",
+						"48",
+						"2"
+					]
+				},
+				"description": "Rota para editar a posição de exibição de um produto. Apenas o id e a posição são referidos. Não é colocado nada no corpo"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/aplicacoes/<int:id>/<int:posicao>",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost/aplicacoes/20/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aplicacoes",
+						"20",
+						"1"
+					]
+				},
+				"description": "Rota para editar a posição de exibição de uma aplicação. Apenas o id e a posição são referidos. Não é colocado nada no corpo"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/imagens_aplicacoes/<int:id>/<int:posicao>",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost/imagens_aplicacoes/9/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"imagens_aplicacoes",
+						"9",
+						"1"
+					]
+				},
+				"description": "Rota para editar a posição de exibição de uma imagem. Apenas o id e a posição são referidos. Não é colocado nada no corpo"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/produtos/<int:id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/produtos/54",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"produtos",
+						"54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/aplicacoes/<int:id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/aplicacoes/26",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aplicacoes",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/imagens_aplicacoes/<int:id>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/imagens_aplicacoes/27",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"imagens_aplicacoes",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"teste\",\n\t\"password\": \"teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/registration",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"teste\",\n\t\"password\": \"teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/logout/access",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/logout/access",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"logout",
+						"access"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/logout/refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/logout/refresh",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"logout",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/token/refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/token/refresh",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"token",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

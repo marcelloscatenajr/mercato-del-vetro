@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="icon" href="./static/img/favicon.png">
+<link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Produtos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="static/css/index.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="admProdutos" class="bg-light page-section">
+        <div class="container">
+            <h2 class="section-heading text-uppercase text-center" style="margin-bottom: 20px;">PRODUTOS</h2>
+            <div>
+                <a style="float: left" class="btn btn-primary btn-md textoBranco" href="/administracao"><i
+                        class="fas fa-long-arrow-alt-left"></i> Voltar</a>
+                <div style="float: right;" class="row" id=botoes>
+                    <div id="addBotao">
+                        <a onClick="movimentar()" class="btn btn-primary btn-md textoBranco"
+                            style="margin-right: 10px; cursor: pointer;"><i class="fas fa-arrows-alt"></i>
+                            Movimentar</a>
+                        <a class="btn btn-primary btn-md textoBranco" href="adicionar_produto"><i
+                                class="fas fa-plus-circle"></i> Adicionar</a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:100px" id="getProdutos" class="row"></div>
+        </div>
+    </section>
+    <div id="getModal"></div>
+
+
+    <!-- Bootstrap/Jquery -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="static/js/produtos.min.js"></script>
+    <script>
+
+
+
+    </script>
+
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.js"></script>
+
+    <!-- slick -->
+    <script type="text/javascript" src="static/vendor/slick/slick.min.js"></script>
+
+    <!-- Custom scripts -->
+    <!-- <script src="./static/js/index.min.js"></script> -->
+    <script src="./static/js/slick.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw4b8QAm2tKlnUrA0T-gp2IQSwde6uyqc&callback=initMap">
+        </script>
+</body>
+
+</html>
